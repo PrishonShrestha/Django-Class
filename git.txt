@@ -1,2 +1,6 @@
 git init
 git status
+git add . : add all
+git add git.txt : add selected file
+git commit -m "Comment" -m "Discription" :Commit file
+git push origin master : push commited file to remote machine
