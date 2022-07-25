@@ -3,6 +3,7 @@ git status
 git add . : add all
 git add git.txt : add selected file
 git commit -m "Comment" -m "Discription" :Commit file
+git commit -am "Comment" : Add and commit at same time
 git push -u origin master : push commited file to remote machine
 
 git branch : List branches
