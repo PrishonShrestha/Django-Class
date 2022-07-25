@@ -5,6 +5,7 @@ git add git.txt : add selected file
 git commit -m "Comment" -m "Discription" :Commit file
 git commit -am "Comment" : Add and commit at same time
 git push -u origin master : push commited file to remote machine
+git stash : cancel changes
 
 git branch : List branches
 git checkout -b feature-1 : Create new branch with name feature-1
@@ -14,3 +15,8 @@ git diff : check difference
 git merge feature1 : merge branch name "feature1" with other branch
 git branch -d nameofbranch : delete branch
 git pull -u origin master
+
+git log : commit history
+git reset HEAD~1
+
+cd ../NameOfFolder : Change directory
