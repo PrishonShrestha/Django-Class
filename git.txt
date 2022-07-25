@@ -12,3 +12,4 @@ git checkout master : switch between branches
 git diff : check difference 
 git merge feature1 : merge branch name "feature1" with other branch
 git branch -d nameofbranch : delete branch
+git pull -u origin master
