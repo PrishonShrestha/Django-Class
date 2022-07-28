@@ -1,6 +1,7 @@
 # Check whether a string is palindrome or not
 def check_palindrome():
-    word = str(input("Enter string: "))
+    word1 = str(input("Enter string: "))
+    word = word1.lower()
     if(word == word[::-1]):
         print(f"{word} is palindrome.")
     else:
@@ -12,7 +13,15 @@ def check_palindrome():
 def transpose_matrix():
     matrix1 = [[1,2], [3,4], [5,6],[7,8]]
     transposed = [[row[i] for row in matrix1] for i in range(len(matrix1[0]))]
+
+    ##Using loop
+    for row in matrix1:
+        print(row)
+        for i in range(2):
+            print(row[i])
     print(transposed)
+
+
 
 #transpose_matrix()
 
@@ -24,9 +33,9 @@ def check_prime_number():
             if(num%i == 0):
                 print(f"{num} is not a prime number")
                 break
-            else:
-                print(f"{num} is a prime number")
-                break
+        else:
+            print(f"{num} is a prime number")
+            
     else:
         print("Invalid number")
 #check_prime_number()
@@ -39,7 +48,7 @@ def count_vowels():
     for i in vowel:
         if i in 'aeiou':
             a = a+1
-    print(a) 
+    #print(a) 
 #count_vowels()
 
 
@@ -51,6 +60,10 @@ def pos_and_neg_numbers():
     for p in int_list:
         if p >=0:
             print(p)
+    
+    #positive number (2nd method)
+    num2 = [each for each in list2 if type(each)==int and each>1]
+    print(num2)
 
 #pos_and_neg_numbers()
 
@@ -84,3 +97,13 @@ def palindrome_list():
     else:
         print("Not same")
 #palindrome_list()
+
+
+# filter dict b : so that we can get only values which consists of letters 'abc'
+#using dict comprehension    
+#res = {'2':'approved', '3':'abcde'}
+def filter_dict():
+    b = {'1':'pending', '2':'approved', '3':'abcde'}
+    res = {k:v for k,v in b.items() if ('a' or 'b' or'c') in v}
+    print(res)
+#filter_dict()
