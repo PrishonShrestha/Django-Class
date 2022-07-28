@@ -43,10 +43,12 @@ def Hangman():
                 print( "        / \          |")
                 print( "       /   \         |")
                 print( "                     |")
+
+                print("correct answer: ", user_input)
                 break
         else:
             print("Congratulation")
-            print(user_input)
+            print("Correct answer: ", user_input)
 
 
 
