@@ -33,7 +33,17 @@ def Hangman():
                     else:
                         print("Already guessed")
             else:
-                print("Loss")
+                print("         Game over")
+                print( "         _____________")
+                print( "         !           |")
+                print( "      |0   0|        |")
+                print( "         |           |")
+                print( "        /|\          |")
+                print( "       / | \         |")
+                print( "         |           |")
+                print( "        / \          |")
+                print( "       /   \         |")
+                print( "                     |")
                 break
         else:
             print("Congratulation")
