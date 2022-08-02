@@ -252,18 +252,17 @@ def sort_list():
 # Note: No need for UI. Use matrix concepts to place your ‘X’ or ‘O’. Input
 # turn by turn for two players and one can win by horizontal/vertical or
 # diagonal match.
+
 # 17. Li = ['abc', 'def', 'ghi']
 # Op = [ [‘a’,’b’,’c], [‘d’,’e’,’f’], [‘g’,’h’,’i’]]. Use map.
 
-'''def list_map(l):
-    
-    for i in l:
-        for j in i:
-            return j
-Li = ['abc', 'def', 'ghi']
-res = map(list_map, Li)
-a = set(res)
-print(a)'''
+def list_map():
+    Li = ['abc', 'def', 'ghi']
+
+    a =list(map(list, Li))
+    print(a)
+#list_map()
+
 
 
 # 18. X = [5,10,15]
@@ -276,13 +275,29 @@ def sum_list_lambda():
     print(sum_list)
 #sum_list_lambda()
 
-# 19. Dynamically pass parameters in a function which passes multiple positive and neg
-# integers. Return sum of all the values passed.
+# 19. Dynamically pass parameters in a function which passes multiple positive and neg integers. Return sum of all the values passed.
 # Eg:
 # A(1,2,3) op = 6
 # A(1,2,3,4) op = 10
+A=(1,2,3,4)
+def dynamic_sum_function(b):
+    a=0
+    for i in A:
+        a = i+a
+    print(a)
+#dynamic_sum_function(A)
+
+
 # 20. Convert radian to degree.
 # 21. Convert binary number to Decimal
+def binary_to_decimal():
+    binary_number = input("Enter binary number: ")
+    print(type(binary_number))
+    a = 0
+    for i in binary_number:
+        a = a*2 + int(i)
+    print(a)
+#binary_to_decimal()
 
 
 # 22. Check if the first and last element in a list is equal.
