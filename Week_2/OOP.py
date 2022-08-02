@@ -41,5 +41,5 @@ class Person:
         print(age)
         return cls(name, age)
 
-person = Person("liza", 22)
-p2 = Person.obj_createwith_age_by_yr("ABC", 1998)
+#person = Person("liza", 22)
+p2 =Person.obj_createwith_age_by_yr("ABC", 1998)
