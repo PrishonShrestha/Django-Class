@@ -29,9 +29,6 @@ class TemperatureConverter:
     def temp_to_convert(self):
         
         if unit=='c':
-            # c=TemperatureConverter.from_c()
-            # print(c)
-            # print(a.f)
             print("(k,f)", self.from_C())
 
         elif unit == 'f':
