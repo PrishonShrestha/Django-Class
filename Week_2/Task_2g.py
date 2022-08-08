@@ -8,12 +8,15 @@ cheese
 Get values of chicken meat, lettuce leaves and tomato slices from user. And create a normal sized burger. Use of OOP in Python.'''
 
 class Burger:
-    def __init__(self, meat, lettuce, tomato, sauce, cheese) -> None:
+    def __init__(self, meat, sauce,  lettuce='', tomato='', cheese='') -> None:
         self.meat = meat
         self.lettuce = lettuce
         self.tomato = tomato
         self.sauce = sauce
         self.cheese = cheese
+
+    def ingredients(self):
+        return print(f"Ingredients for Medium Size burger: \n Meat: {self.meat} \n Sauce: {self.sauce} \n Lettuce leaves: {self.lettuce} \n Tomato: {self.tomato} \n Cheese: {self.cheese}")
 
 class MediumBurger(Burger):
     def __init__(self, meat, sauce,  lettuce='', tomato='', cheese='') -> None:
